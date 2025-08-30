@@ -3,7 +3,4 @@ pydantic
 uvicorn
 sqlalchemy
 psycopg2-binary
-<<<<<<< HEAD
 python-dotenv
-=======
->>>>>>> 190877fef76365514a5feb0e55492de8f220dcf0
