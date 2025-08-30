@@ -1,0 +1,13 @@
+from fastapi import FastAPI, Depends
+from pydantic import BaseModel
+from sqlalchemy import create_engine, Column, Integer, String, Date, Float, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, relationship, Session
+import datetime
+
+
+
+class AttendanceCreate(BaseModel):
+    employee_id: int
+    date: datetime.date
+    status: str
