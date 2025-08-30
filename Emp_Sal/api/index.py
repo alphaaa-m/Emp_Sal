@@ -1,6 +1,3 @@
-import os
-from fastapi import FastAPI
-from main import app as fastapi_app  # Import your main app
+from main import app as fastapi_app
 
-# Expose the app for Vercel
-app = fastapi_app
+app = fastapi_app  # Vercel needs this line
